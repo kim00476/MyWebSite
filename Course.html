@@ -1,0 +1,129 @@
+<!-- Student Name: Miok Kim -->
+<!-- File Name : Assignmnet1.html -->
+<!-- Date : July 04, 2023 -->
+<!-- Description: Creat my course and homework?? -->
+    <!-- Reference -->
+    <!-- https://wallpapercave.com/w/wp8046763 -->
+ 
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My course</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="sub-banner2">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="Course.html">Course</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+ <!---detail--> 
+    <div class="form-line">
+        <select id="filter-F" class="input">
+            <option>All</option>
+            <option>Level 1</option>
+            <option>Level 2</option> 
+        </select>
+        <select id="sort-F" class="input" name="sort">
+            <option value="">None</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+        <input  class="input" type="text" id="input-box" name="query" placeholder="Search ">
+        <button id="submit"><i class="fa fa-search"></i></button>    
+        <div class="result-box"></div>
+        <ul></ul>
+    </div> 
+   
+    <section class="Mycourse">
+        <h1>My Course</h1>
+        <p>Introduces My Alogunuin College Computer Programming.</p>
+
+        <div class="aboutCourse" id="courseContainer">
+            <div class="about-col" id="course1">
+                <h3>CST8116 : Introduction to Computer Programming</h3>
+                <span class="course-level1">Level 1</span>
+                <p>This course offers a comprehensive introduction to logic, problem-solving, and programming, focusing on Java as the programming language. 
+                    Students will develop essential skills in algorithmic thinking, coding conventions, and object-oriented programming, 
+                    supported by hands-on lab assessments to reinforce practical application.</p>
+            </div>
+            <div class="about-col" >
+                <h3>CST8118 : Computer Essentials</h3>
+                <span class="course-level1">Level 1</span>
+                <p>This course covers computer maintenance, operating systems, productivity software, and environmental sustainability in Information Technology. 
+                    Students learn about hardware, secure systems, and use spreadsheets for problem-solving. They also discuss the financial and environmental impact of computer technology. 
+                    Practical assessments include virtualization software usage.</p>
+            </div>
+            <div class="about-col" >
+                <h3>CST8215 : Introduction to Database</h3>
+                <span class="course-level1">Level 1</span>
+                <p>Databases are used to store data and are a core component of many information technology systems. 
+                    Students learn the fundamentals of relational databases design using Entity Relation Diagrams (ERDs), and use Structured Query Language (SQL) to create, modify and query a database. 
+                    Students design and create databases that are maintainable, secure and adaptable to change in business requirements, using normalization. 
+                    Students become familiar with the functions of a Database Management System (DBMS) and its components in comparison with legacy systems and alternative information storage mechanisms.</p>
+            </div>
+            <div class="about-col">
+                <h3>CST8215 : Introduction to Database</h3>
+                <span class="course-level2">Level 2</span>
+                <p>This course explores database systems, automation of data processing tasks, and their connection to IT security. 
+                    Students gain practical experience with Oracle and MySQL databases, learning advanced SQL, modeling tools, 
+                    and programming with PL/SQL. Topics covered include data storage, retrieval, security, and data warehousing.</p>
+            </div>
+            <div class="about-col">
+                <h3>CST8102 : Operating System Fundamentals (GNU/Linux)</h3>
+                <span class="course-level2">Level 2</span>
+                <p>
+                    This course provides a comprehensive exploration of operating systems, including their basic concepts, components, and interactions with hardware and software, with a focus on GNU/Linux. 
+                    Students gain theoretical knowledge and practical skills in operating system structures, process management, storage management, installation, configuration, and administration.</p>
+            </div>
+            <div class="about-col">
+                <h3>CST8284 : Object Oriented Programming (Java)</h3>
+                <span class="course-level2">Level 2</span>
+                <p>
+                    This course explores Java-based Object-Oriented Programming (OOP), covering essential concepts like encapsulation, inheritance, abstraction, and polymorphism. 
+                    Students also gain exposure to data structures, algorithms, and basic Graphical User Interface (GUI) programming.</p>
+            </div>
+            <div class="about-col" >
+                <h3>CST8285 : Web Programming</h3>
+                <span class="course-level2">Level 2</span>
+                <p>The World Wide Web (WWW) has become an integrated part of everyday life. Students develop basic skills of web programming, website design and implementation. JavaScript, HTML5, and PHP are used to explore web-based solutions to problems of increasing interactivity and complexity. Lectures are reinforced by practical assignments that encourage students to construct and maintain their own websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My school work -->
+    <section class="mywork">
+        <h1>My Work</h1>
+        <p>Introduces My Alogunuin College Computer Programming.</p>
+
+        <div class="aboutcourse">
+            <div class="about-col">
+                <h3>Flex Box</h3>
+                <p>Flex Boxis a one-dimensional layout method for arranging items in rows or columns. <br>Items flex (expand) to fill additional space or shrink to fit into smaller spaces.</p>
+                <a href="/lab3startercode/flexbox.html">Go Check</a>
+            </div>
+            <div class="about-col">
+                <h3>My First CSS Work</h3>
+                <p>CSS can be used for very basic document text styling — for example, for changing the color and size of headings and links. <br>It can be used to create a layout — for example, turning a single column of text into a layout with a main content area and a sidebar for related information. <br>It can even be used for effects such as animation. Have a look at the links in this paragraph for specific examples.</p>
+                <a href="/lab3startercode/Lab3.html">Go Check</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Miok Kim. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+[submodule "MyWebSite"]
+    path = MyWebSite
+    url = https://github.com/kim00476/MyWebSite.git

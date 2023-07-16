@@ -1,0 +1,475 @@
+/* google fonts */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9, 17, 45, 0.7), rgba(6, 13, 41, 0.7)), url(images/wp8046763-blue-tech-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}   
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content:'';
+    height:3px ;
+    width: 0%;
+    background: #CCCCFF;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#ffffff;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 18px;
+    font-weight: 100;
+    line-height: 25px;
+    color: #ffffff;
+}
+.content button{
+    width: 200px;
+    padding: 15px 10px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #CCCCFF;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.content button span {
+    background: #9191d7;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.content  button:hover span{
+    width: 100%;
+}
+.content button:hover{
+    border: none;
+}
+@media(max-width: 700px){
+    .content h1{
+        font-size: 30px;
+    }
+}  
+/*----About me---*/
+.Aboutme {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+.Aboutme h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+p {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-col {
+    flex-basis: 30%;
+    background: #e7e7ff;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.linkCampus{
+    cursor: pointer;
+}
+.about-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+footer{
+    color: #353935;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    padding: 18px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+}
+/* my resume page */
+.sub-banner{
+    width: 100%;
+    height: 15vh;
+    background-image: linear-gradient(rgba(9, 17, 45, 0.7), rgba(6, 13, 41, 0.7)), url(images/wp8046763-blue-tech-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}   
+.sub-banner h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.container{
+    width: 100%;
+    max-width: 1220px;
+    min-height: 800px;
+    background: #fff;
+    margin: 20px;
+    display:grid;
+    grid-template-columns: 1fr 2.4fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.leftside{
+    position: relative;
+    background: #10013a;
+    padding: 40px;
+}
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.imgbox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    overflow: hidden;
+}
+.imgbox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    object-fit: cover;
+}
+.profile h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+.profile h2 span{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+.contactInfo{
+    padding-top: 30px;
+
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.contactInfo ul li{
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 28px;
+    font-size: 16px;
+    color: #03a9f4;
+}
+.contactInfo ul li span{
+color: #ffffff;
+font-weight: 300;
+}
+.education li {
+    margin-bottom: 15px;
+}
+.education h5{
+    color:#03a9f4;
+    font-weight: 500;
+}
+
+.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+
+/*rightside  */
+.container .rightside{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.text p{
+    color:#333 ;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_compay{
+    min-width: 150px;
+}
+.about .box .year_compay h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year_company{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+}
+/* Course page */
+.sub-banner2{
+    width: 100%;
+    height: 15vh;
+    background-image: linear-gradient(rgba(9, 17, 45, 0.7), rgba(6, 13, 41, 0.7)), url(images/wp8046763-blue-tech-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}   
+
+.form-line{
+    width: 450px;
+    background: #efecec;
+    margin: 10px auto 20px;
+    border-radius: 50px;
+    padding: 5px;  
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.input{
+    flex: 0;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    color: #333;
+}
+.result-box ul{
+    border-top: 1px solid #f2f2f2;
+    padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.result-box ul li:hover{
+    background: #eff1f2;
+}
+
+#submit {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    /* Initial color */
+    color: rgb(79, 95, 156);
+  }
+  
+  #submit:hover {
+    /* Color on hover */
+    color: black;
+  }
+
+.Mycourse{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.Mycourse h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+p {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.mywork{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.mywork h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.result-box{
+    max-height: 300px;
+    overflow-y: auto; /* Use 'overflow-y' instead of 'overflow' to enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling */
+}
+
+#levelSelect{
+    display: flex;
+    gap: 4rem;
+}
+
+@media (max-width: 600px) {
+.form-line, .input{
+    padding: 10px 20px;
+}
+
+.Mycourse h1{
+    font-size: 20px;
+}
+ 
+.result-box ul li {
+    padding: 10px;
+  }
+}
+
+
