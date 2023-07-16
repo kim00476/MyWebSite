@@ -472,4 +472,30 @@ p {
   }
 }
 
+@media (max-width: 360px) {
+    .form-line{
+        width: 100%;
+    }
+    
+    .Mycourse h1{
+        font-size: 20px;
+    }
+     
+    .result-box ul li {
+        padding: 10px;
+      }
+
+      .input {
+        flex: 0;
+        height: 20px;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        font-size: 12px;
+        padding: 0px;
+        color: #333;
+    }
+
+    }
+
 
