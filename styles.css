@@ -369,11 +369,10 @@ font-weight: 300;
 }   
 
 .form-line{
-    width: 450px;
+    width: 40%;
     background: #efecec;
     margin: 10px auto 20px;
     border-radius: 50px;
-    padding: 5px;  
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -459,8 +458,15 @@ p {
 }
 
 @media (max-width: 600px) {
+
+    
+.form-line{
+    width: 90%;
+}
+
 .form-line, .input{
     padding: 10px 20px;
+    height: 50px;
 }
 
 .Mycourse h1{
@@ -487,7 +493,7 @@ p {
 
       .input {
         flex: 0;
-        height: 20px;
+        height: 40px;
         background: transparent;
         border: 0;
         outline: 0;
